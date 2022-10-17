@@ -4,17 +4,19 @@ public class Ejercicio1{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int codigo = 0;
+        int code = 0;
 
         System.out.print("Introduce el número secreto: ");
 
-        codigo = sc.nextInt();
+        code = sc.nextInt();
 
-        if(codigo == 241){
+        if(code == 241){
             System.out.println("Enhorabuena, has acertado el código");
-        } else if(codigo != 241){
+        } else if(code != 241){
             System.out.println("Código incorrecto");
-        }      
+        }else {
+            System.out.println("Formato incorrecto");
+        }
         
         sc.close();
     }

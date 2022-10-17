@@ -5,21 +5,23 @@ public class Ejercicio2 {
 
         Scanner sc = new Scanner(System.in);
 
-        int nota = 0;
+        int nota_examen = 0;
 
         System.out.print("Introduce tu nota para saber tu calificación: ");
 
-        nota = sc.nextInt();
+        nota_examen = sc.nextInt();
 
-        if(nota >= 0 && nota <5){
+        // Esta estructura de condicionales nos dice que dependiendo de la nota que le metamos nos dirá su calificación.
+
+        if(nota_examen >= 0 && nota_examen <5){
             System.out.println("Palmazo, tienes un SUSPENSO.");
-        } else if(nota == 5){
+        } else if(nota_examen == 5){
             System.out.println("Por lo menos tienes un SUFICIENTE.");
-        } else if(nota < 7){
+        } else if(nota_examen < 7){
             System.out.println("Tienes un BIEN.");
-        } else if(nota < 9){
+        } else if(nota_examen < 9){
             System.out.println("Felicidades, tienes un NOTABLE.");
-        } else if(nota <= 10){
+        } else if(nota_examen <= 10){
             System.out.println("¡TIENES UN SOBRESALIENTE!");
         }
         
